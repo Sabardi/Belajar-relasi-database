@@ -28,5 +28,10 @@ if($aksi == "tambah"){
 }elseif($aksi == "tambahtransaksi"){
     $database->input_transaksi($_POST['id_pelanggan'],$_POST['id_service'],$_POST['status_transaksi']);
     header('location:transaksi-data.php');
+
+}elseif($aksi == "tambah2tabel"){
+    $database->Input_data_2($_POST['nama'],$_POST['alamat'],$_POST['no_hp'],
+    $_POST['nama_perangkat'],$_POST['model'],$_POST['tanggal_masuk'],$_POST['deskripsi']);
+    header('location:index.php');
 }
 ?>

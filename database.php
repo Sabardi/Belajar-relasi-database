@@ -195,5 +195,14 @@ class database{
 		mysqli_query($this->koneksi,"insert into tb_transaksi values ('','$id_pelanggan','$id_service','$status_transaksi')");
 	}
 
+
+
+	// tambah data dari 2 tabel
+	function Input_data_2($nama, $alamat, $no_tlpn, $nama_perangkat, $model, $tanggal_masuk, $deskripsi){
+		mysqli_query($this->koneksi,"insert into tb_pelanggan values ('','$nama','$alamat','$no_tlpn')");
+		mysqli_query($this->koneksi,"insert into tb_service values ('','$nama_perangkat','$model','$tanggal_masuk','$deskripsi')");
+	}
+	// tambah data dari 2 tabel end
+
 }
 ?>
