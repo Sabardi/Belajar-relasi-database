@@ -7,12 +7,9 @@
 </head>
 <body>
     <center>
-        <h1>Tambah data pelanggan</h1>
-        <form action="proses.php?aksi=tambah2tabel" method="post">
+        <h1>Tambah data</h1>
+        <form action="proses1.php?aksi=tambah_servic_pelanggan" method="post">
             <table>
-                <input type="hidden" name="id_service" id="id_service">
-                <input type="hidden" name="id_pelanggan" id="id_pelanggan">
-
                 <tr>
                     <td><label for="nama">Nama</label></td>
                     <td>:</td>
@@ -34,7 +31,14 @@
                         <input type="text" name="no_hp" id="no_hp">
                     </td>
                 </tr>
-
+                <tr>
+                    <td><label for="email">email</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="email" id="email">
+                    </td>
+                </tr>
+<!-- service start -->
                 <tr>
                     <td><span>Nama perangkat</span></td>
                     <td>:</td>
@@ -73,13 +77,17 @@
                     <td></td>
                     <td></td>
                     <td>
-                    <button type="submit">simpan</button>
-                    <button><a href="service-data.php">Batal</a></button>
+                        <button type="submit">simpan</button>
+                        <button><a href="#">batal</a></button>
                     </td>
                 </tr>
-
             </table>
         </form>
+
+
+        <br>
+<button><a href="index.php">ke dashboard</a></button>
+
     </center>
 </body>
 </html>

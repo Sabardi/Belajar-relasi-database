@@ -29,6 +29,11 @@
             <a href="tambahdata2.php">tambah data 2</a>
             </li>
         </ul>
+        <ul>
+            <li>
+            <a href="inputdata_service_pelanggan.php">data service pelanggan</a>
+            </li>
+        </ul>
         
 <a href="login.php?logout=true" class="btn btn-primary">Logout</a>
     </center>
